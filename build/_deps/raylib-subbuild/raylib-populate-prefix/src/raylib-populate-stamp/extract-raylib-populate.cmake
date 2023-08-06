@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.5)
 
 # Make file names absolute:
 #
-get_filename_component(filename "/home/deck/source/repos/C++/raylib623/build/_deps/raylib-subbuild/raylib-populate-prefix/src/4.5.0.tar.gz" ABSOLUTE)
-get_filename_component(directory "/home/deck/source/repos/C++/raylib623/build/_deps/raylib-src" ABSOLUTE)
+get_filename_component(filename "/workspaces/JR_raylib_pong/build/_deps/raylib-subbuild/raylib-populate-prefix/src/4.5.0.tar.gz" ABSOLUTE)
+get_filename_component(directory "/workspaces/JR_raylib_pong/build/_deps/raylib-src" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

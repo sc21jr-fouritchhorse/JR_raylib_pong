@@ -4,8 +4,8 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.27.1/share/cmake/Modules/CMakeDetermineSystem.cmake:211 (message)"
-      - "CMakeLists.txt:16 (project)"
+      - "/home/codespace/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:10 (project)"
     message: |
-      The system is: Linux - 5.13.0-valve36-1-neptune - x86_64
+      The system is: Linux - 5.15.0-1042-azure - x86_64
 ...
