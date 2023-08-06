@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/llvm-ar"
+			"value" : "/usr/bin/ar"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -63,11 +63,15 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Choose the type of build."
+				},
+				{
+					"name" : "STRINGS",
+					"value" : "Debug;Release;MinSizeRel;RelWithDebInfo"
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -79,7 +83,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/workspaces/JR_raylib_pong/build"
+			"value" : "/home/deck/source/repos/C++/rl_pong/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -143,7 +147,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/codespace/.local/lib/python3.10/site-packages/cmake/data/bin/cmake"
+			"value" : "/usr/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -155,7 +159,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/codespace/.local/lib/python3.10/site-packages/cmake/data/bin/cpack"
+			"value" : "/usr/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -167,7 +171,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/codespace/.local/lib/python3.10/site-packages/cmake/data/bin/ctest"
+			"value" : "/usr/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -179,11 +183,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/clang++"
+			"value" : "/usr/bin/c++"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -195,27 +199,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "LLVM archiver"
+					"value" : "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/llvm-ar-10"
-		},
-		{
-			"name" : "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "`clang-scan-deps` dependency scanner"
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+			"value" : "/usr/bin/gcc-ar"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -227,11 +215,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Generate index for LLVM archive"
+					"value" : "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/llvm-ranlib-10"
+			"value" : "/usr/bin/gcc-ranlib"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -323,11 +311,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/clang"
+			"value" : "/usr/bin/cc"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -339,27 +327,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "LLVM archiver"
+					"value" : "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/llvm-ar-10"
-		},
-		{
-			"name" : "CMAKE_C_COMPILER_CLANG_SCAN_DEPS",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "`clang-scan-deps` dependency scanner"
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "CMAKE_C_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+			"value" : "/usr/bin/gcc-ar"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -371,11 +343,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Generate index for LLVM archive"
+					"value" : "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/llvm-ranlib-10"
+			"value" : "/usr/bin/gcc-ranlib"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -471,7 +443,19 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/llvm-dlltool"
+			"value" : "CMAKE_DLLTOOL-NOTFOUND"
+		},
+		{
+			"name" : "CMAKE_EDIT_COMMAND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to cache edit program executable."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/bin/ccmake"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -570,12 +554,16 @@
 			"properties" : 
 			[
 				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Enable/Disable output of compile commands during generation."
 				}
 			],
 			"type" : "BOOL",
-			"value" : "TRUE"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_EXTRA_GENERATOR",
@@ -599,7 +587,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/workspaces/JR_raylib_pong/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/deck/source/repos/C++/rl_pong/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -683,30 +671,6 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "CMAKE_HAVE_PTHREADS_CREATE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Have library pthreads"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "CMAKE_HAVE_PTHREAD_CREATE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Have library pthread"
-				}
-			],
-			"type" : "INTERNAL",
 			"value" : "1"
 		},
 		{
@@ -743,7 +707,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/workspaces/JR_raylib_pong"
+			"value" : "/home/deck/source/repos/C++/rl_pong"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1007,7 +971,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "0"
 		},
 		{
 			"name" : "CMAKE_INSTALL_SYSCONFDIR",
@@ -1163,7 +1127,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/llvm-nm"
+			"value" : "/usr/bin/nm"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -1191,7 +1155,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/llvm-objcopy"
+			"value" : "/usr/bin/objcopy"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -1207,7 +1171,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/llvm-objdump"
+			"value" : "/usr/bin/objdump"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -1331,7 +1295,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/llvm-ranlib"
+			"value" : "/usr/bin/ranlib"
 		},
 		{
 			"name" : "CMAKE_READELF",
@@ -1347,7 +1311,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/llvm-readelf"
+			"value" : "/usr/bin/readelf"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -1359,7 +1323,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/codespace/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26"
+			"value" : "/usr/share/cmake-3.26"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1763,7 +1727,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/workspaces/JR_raylib_pong/build/_deps"
+			"value" : "/home/deck/source/repos/C++/rl_pong/build/_deps"
 		},
 		{
 			"name" : "FETCHCONTENT_FULLY_DISCONNECTED",
@@ -1955,7 +1919,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/workspaces/JR_raylib_pong/build/_deps/raylib-build/raylib/external/glfw"
+			"value" : "/home/deck/source/repos/C++/rl_pong/build/_deps/raylib-build/raylib/external/glfw"
 		},
 		{
 			"name" : "GLFW_BUILD_DOCS",
@@ -2016,18 +1980,6 @@
 			],
 			"type" : "BOOL",
 			"value" : "ON"
-		},
-		{
-			"name" : "GLFW_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for GLFW."
-				}
-			],
-			"type" : "PATH",
-			"value" : "GLFW_DIR-NOTFOUND"
 		},
 		{
 			"name" : "GLFW_INSTALL",
@@ -2099,7 +2051,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/workspaces/JR_raylib_pong/build/_deps/raylib-src/src/external/glfw"
+			"value" : "/home/deck/source/repos/C++/rl_pong/build/_deps/raylib-src/src/external/glfw"
 		},
 		{
 			"name" : "GLFW_USE_WAYLAND",
@@ -2246,22 +2198,6 @@
 			"value" : "/usr/lib/x86_64-linux-gnu/libEGL.so"
 		},
 		{
-			"name" : "OPENGL_gl_LIBRARY",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "OPENGL_gl_LIBRARY-NOTFOUND"
-		},
-		{
 			"name" : "OPENGL_glu_LIBRARY",
 			"properties" : 
 			[
@@ -2367,7 +2303,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-I/usr/include/uuid;-I/usr/include/freetype2;-I/usr/include/libpng16"
+			"value" : "-I/usr/include/freetype2;-I/usr/include/libpng16;-I/usr/include/harfbuzz;-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include"
 		},
 		{
 			"name" : "PKG_FONTCONFIG_CFLAGS_I",
@@ -2427,7 +2363,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/include/uuid;/usr/include/freetype2;/usr/include/libpng16"
+			"value" : "/usr/include/freetype2;/usr/include/libpng16;/usr/include/harfbuzz;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include"
 		},
 		{
 			"name" : "PKG_FONTCONFIG_LDFLAGS",
@@ -2571,7 +2507,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-I/usr/include/uuid;-I/usr/include/freetype2;-I/usr/include/libpng16"
+			"value" : "-I/usr/include/freetype2;-I/usr/include/libpng16;-I/usr/include/harfbuzz;-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include"
 		},
 		{
 			"name" : "PKG_FONTCONFIG_STATIC_CFLAGS_I",
@@ -2607,7 +2543,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/include/uuid;/usr/include/freetype2;/usr/include/libpng16"
+			"value" : "/usr/include/freetype2;/usr/include/libpng16;/usr/include/harfbuzz;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include"
 		},
 		{
 			"name" : "PKG_FONTCONFIG_STATIC_LDFLAGS",
@@ -2619,7 +2555,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-L/usr/lib/x86_64-linux-gnu;-lfontconfig;-luuid;-lexpat;-lfreetype;-lpng16;-lm;-lz;-lm;-lz"
+			"value" : "-L/usr/lib/x86_64-linux-gnu;-lfontconfig;-lbz2;-L/usr/lib/x86_64-linux-gnu;-lexpat;-lm;-lpng16;-lm;-lm;-lharfbuzz;-lm;-lbrotlidec;-lpcre;-lbrotlicommon;-lglib-2.0;-pthread;-lm;-L/usr/lib;-lgraphite2;-lfreetype;-lbz2;-lz"
 		},
 		{
 			"name" : "PKG_FONTCONFIG_STATIC_LDFLAGS_OTHER",
@@ -2631,7 +2567,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "-pthread"
 		},
 		{
 			"name" : "PKG_FONTCONFIG_STATIC_LIBDIR",
@@ -2655,7 +2591,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "fontconfig;uuid;expat;freetype;png16;m;z;m;z"
+			"value" : "fontconfig;bz2;expat;m;png16;m;m;harfbuzz;m;brotlidec;pcre;brotlicommon;glib-2.0;m;graphite2;freetype;bz2;z"
 		},
 		{
 			"name" : "PKG_FONTCONFIG_STATIC_LIBRARY_DIRS",
@@ -2667,7 +2603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/lib/x86_64-linux-gnu"
+			"value" : "/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib"
 		},
 		{
 			"name" : "PKG_FONTCONFIG_STATIC_LIBS",
@@ -2727,7 +2663,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "2.13.1"
+			"value" : "2.14.1"
 		},
 		{
 			"name" : "PKG_FONTCONFIG_fontconfig_INCLUDEDIR",
@@ -2807,7 +2743,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/librt.so"
+			"value" : "/usr/lib/x86_64-linux-gnu/librt.a"
 		},
 		{
 			"name" : "USE_EXTERNAL_GLFW",
@@ -2971,7 +2907,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_X11_xcb_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_X11_xcb_LIB",
@@ -2987,7 +2923,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_X11_xcb_LIB-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libX11-xcb.so"
 		},
 		{
 			"name" : "X11_XRes_INCLUDE_PATH",
@@ -3067,7 +3003,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xaccessrules_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_Xaccessstr_INCLUDE_PATH",
@@ -3163,7 +3099,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xcomposite_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_Xcomposite_LIB",
@@ -3179,7 +3115,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_Xcomposite_LIB-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libXcomposite.so"
 		},
 		{
 			"name" : "X11_Xcursor_INCLUDE_PATH",
@@ -3227,7 +3163,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xdamage_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_Xdamage_LIB",
@@ -3243,7 +3179,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_Xdamage_LIB-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libXdamage.so"
 		},
 		{
 			"name" : "X11_Xdmcp_INCLUDE_PATH",
@@ -3531,7 +3467,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xpm_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_Xpm_LIB",
@@ -3547,7 +3483,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_Xpm_LIB-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libXpm.so"
 		},
 		{
 			"name" : "X11_Xrandr_INCLUDE_PATH",
@@ -3707,7 +3643,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xtst_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_Xtst_LIB",
@@ -3723,7 +3659,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_Xtst_LIB-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libXtst.so"
 		},
 		{
 			"name" : "X11_Xutil_INCLUDE_PATH",
@@ -3755,7 +3691,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xv_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_Xv_LIB",
@@ -3771,7 +3707,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_Xv_LIB-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libXv.so"
 		},
 		{
 			"name" : "X11_Xxf86misc_INCLUDE_PATH",
@@ -3819,7 +3755,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xxf86vm_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_Xxf86vm_LIB",
@@ -3835,7 +3771,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_Xxf86vm_LIB-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libXxf86vm.so"
 		},
 		{
 			"name" : "X11_dpms_INCLUDE_PATH",
@@ -3899,7 +3835,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_xcb_icccm_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_xcb_icccm_LIB",
@@ -3915,7 +3851,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_xcb_icccm_LIB-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libxcb-icccm.so"
 		},
 		{
 			"name" : "X11_xcb_keysyms_INCLUDE_PATH",
@@ -3931,7 +3867,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_xcb_keysyms_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_xcb_keysyms_LIB",
@@ -3947,7 +3883,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_xcb_keysyms_LIB-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libxcb-keysyms.so"
 		},
 		{
 			"name" : "X11_xcb_randr_INCLUDE_PATH",
@@ -3963,7 +3899,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_xcb_randr_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_xcb_randr_LIB",
@@ -3979,7 +3915,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_xcb_randr_LIB-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libxcb-randr.so"
 		},
 		{
 			"name" : "X11_xcb_util_INCLUDE_PATH",
@@ -3995,7 +3931,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_xcb_util_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_xcb_util_LIB",
@@ -4011,7 +3947,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_xcb_util_LIB-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libxcb-util.so"
 		},
 		{
 			"name" : "X11_xcb_xfixes_INCLUDE_PATH",
@@ -4027,7 +3963,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_xcb_xfixes_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_xcb_xfixes_LIB",
@@ -4043,7 +3979,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_xcb_xfixes_LIB-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libxcb-xfixes.so"
 		},
 		{
 			"name" : "X11_xcb_xkb_LIB",
@@ -4059,7 +3995,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_xcb_xkb_LIB-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libxcb-xkb.so"
 		},
 		{
 			"name" : "X11_xcb_xtest_INCLUDE_PATH",
@@ -4075,7 +4011,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_xcb_xtest_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_xcb_xtest_LIB",
@@ -4091,7 +4027,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_xcb_xtest_LIB-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libxcb-xtest.so"
 		},
 		{
 			"name" : "X11_xkbcommon_INCLUDE_PATH",
@@ -4107,7 +4043,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_xkbcommon_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_xkbcommon_LIB",
@@ -4123,7 +4059,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_xkbcommon_LIB-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libxkbcommon.so"
 		},
 		{
 			"name" : "X11_xkbcommon_X11_INCLUDE_PATH",
@@ -4139,7 +4075,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_xkbcommon_X11_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_xkbcommon_X11_LIB",
@@ -4155,7 +4091,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_xkbcommon_X11_LIB-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libxkbcommon-x11.so"
 		},
 		{
 			"name" : "X11_xkbfile_INCLUDE_PATH",
@@ -4171,7 +4107,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_xkbfile_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_xkbfile_LIB",
@@ -4187,7 +4123,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_xkbfile_LIB-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libxkbfile.so"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
@@ -4238,18 +4174,6 @@
 			"value" : "1"
 		},
 		{
-			"name" : "glfw_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for glfw."
-				}
-			],
-			"type" : "PATH",
-			"value" : "glfw_DIR-NOTFOUND"
-		},
-		{
 			"name" : "pkgcfg_lib_PKG_FONTCONFIG_fontconfig",
 			"properties" : 
 			[
@@ -4291,7 +4215,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/workspaces/JR_raylib_pong/build"
+			"value" : "/home/deck/source/repos/C++/rl_pong/build"
 		},
 		{
 			"name" : "pong_IS_TOP_LEVEL",
@@ -4315,7 +4239,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/workspaces/JR_raylib_pong"
+			"value" : "/home/deck/source/repos/C++/rl_pong"
 		},
 		{
 			"name" : "prefix_result",
@@ -4339,7 +4263,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libpthread.so"
+			"value" : "/usr/lib/x86_64-linux-gnu/libpthread.a"
 		},
 		{
 			"name" : "raylib_BINARY_DIR",
@@ -4351,7 +4275,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/workspaces/JR_raylib_pong/build/_deps/raylib-build/raylib"
+			"value" : "/home/deck/source/repos/C++/rl_pong/build/_deps/raylib-build/raylib"
 		},
 		{
 			"name" : "raylib_DIR",
@@ -4399,7 +4323,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/workspaces/JR_raylib_pong/build/_deps/raylib-src/src"
+			"value" : "/home/deck/source/repos/C++/rl_pong/build/_deps/raylib-src/src"
 		}
 	],
 	"kind" : "cache",

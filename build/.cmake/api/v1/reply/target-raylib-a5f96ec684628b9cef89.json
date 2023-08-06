@@ -111,7 +111,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=gnu99"
+					"fragment" : "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99"
 				}
 			],
 			"defines" : 
@@ -129,12 +129,12 @@
 			[
 				{
 					"backtrace" : 10,
-					"path" : "/workspaces/JR_raylib_pong/build/_deps/raylib-src/src"
+					"path" : "/home/deck/source/repos/C++/rl_pong/build/_deps/raylib-src/src"
 				},
 				{
 					"backtrace" : 13,
 					"isSystem" : true,
-					"path" : "/workspaces/JR_raylib_pong/build/_deps/raylib-src/src/external/glfw/include"
+					"path" : "/home/deck/source/repos/C++/rl_pong/build/_deps/raylib-src/src/external/glfw/include"
 				}
 			],
 			"language" : "C",

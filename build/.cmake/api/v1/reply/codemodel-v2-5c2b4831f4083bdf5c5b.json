@@ -11,7 +11,7 @@
 						1
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.24"
@@ -30,7 +30,7 @@
 						2
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.raylib-build-Debug-ea1d4677dd407b26b02b.json",
+					"jsonFile" : "directory-_deps.raylib-build-ea1d4677dd407b26b02b.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.0"
@@ -46,7 +46,7 @@
 						3
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.raylib-build.raylib-Debug-72da211f82114e1e25cf.json",
+					"jsonFile" : "directory-_deps.raylib-build.raylib-72da211f82114e1e25cf.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.0"
@@ -65,7 +65,7 @@
 					[
 						4
 					],
-					"jsonFile" : "directory-_deps.raylib-build.raylib.external.glfw-Debug-3e983b25fa67087a915c.json",
+					"jsonFile" : "directory-_deps.raylib-build.raylib.external.glfw-3e983b25fa67087a915c.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.4"
@@ -76,7 +76,7 @@
 				},
 				{
 					"build" : "_deps/raylib-build/raylib/external/glfw/src",
-					"jsonFile" : "directory-_deps.raylib-build.raylib.external.glfw.src-Debug-96501ee80b62d9206301.json",
+					"jsonFile" : "directory-_deps.raylib-build.raylib.external.glfw.src-96501ee80b62d9206301.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.4"
@@ -91,7 +91,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "",
 			"projects" : 
 			[
 				{
@@ -146,28 +146,28 @@
 				{
 					"directoryIndex" : 4,
 					"id" : "glfw::@9de86fbe87260ae8e66c",
-					"jsonFile" : "target-glfw-Debug-fec41df3eaf21a60bc20.json",
+					"jsonFile" : "target-glfw-5f4be1fb76bdeea45b9e.json",
 					"name" : "glfw",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "pong::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-pong-Debug-376bb63bad67c4f55fdd.json",
+					"jsonFile" : "target-pong-d06b2d4cefb4a7a08f09.json",
 					"name" : "pong",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "raylib::@4dc3a4644cf4ded08c01",
-					"jsonFile" : "target-raylib-Debug-b497bd5e6d023f7d597c.json",
+					"jsonFile" : "target-raylib-a5f96ec684628b9cef89.json",
 					"name" : "raylib",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "update_mappings::@9de86fbe87260ae8e66c",
-					"jsonFile" : "target-update_mappings-Debug-50b52eb7b9fde822333e.json",
+					"jsonFile" : "target-update_mappings-50b52eb7b9fde822333e.json",
 					"name" : "update_mappings",
 					"projectIndex" : 2
 				}
@@ -177,8 +177,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/workspaces/JR_raylib_pong/build",
-		"source" : "/workspaces/JR_raylib_pong"
+		"build" : "/home/deck/source/repos/C++/rl_pong/build",
+		"source" : "/home/deck/source/repos/C++/rl_pong"
 	},
 	"version" : 
 	{

@@ -14,8 +14,8 @@ project(raylib-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(raylib-populate
                      "UPDATE_DISCONNECTED" "False" "DOWNLOAD_EXTRACT_TIMESTAMP" "OFF" "URL" "https://github.com/raysan5/raylib/archive/refs/tags/4.5.0.tar.gz"
-                    SOURCE_DIR          "/workspaces/JR_raylib_pong/build/_deps/raylib-src"
-                    BINARY_DIR          "/workspaces/JR_raylib_pong/build/_deps/raylib-build"
+                    SOURCE_DIR          "/home/deck/source/repos/C++/rl_pong/build/_deps/raylib-src"
+                    BINARY_DIR          "/home/deck/source/repos/C++/rl_pong/build/_deps/raylib-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

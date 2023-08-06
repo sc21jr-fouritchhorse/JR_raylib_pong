@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/codespace/.local/lib/python3.10/site-packages/cmake/data/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /home/codespace/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspaces/JR_raylib_pong
+CMAKE_SOURCE_DIR = /home/deck/source/repos/C++/rl_pong
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspaces/JR_raylib_pong/build
+CMAKE_BINARY_DIR = /home/deck/source/repos/C++/rl_pong/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pong.dir/depend.make
@@ -70,130 +70,130 @@ include CMakeFiles/pong.dir/progress.make
 include CMakeFiles/pong.dir/flags.make
 
 CMakeFiles/pong.dir/main.cpp.o: CMakeFiles/pong.dir/flags.make
-CMakeFiles/pong.dir/main.cpp.o: /workspaces/JR_raylib_pong/main.cpp
+CMakeFiles/pong.dir/main.cpp.o: /home/deck/source/repos/C++/rl_pong/main.cpp
 CMakeFiles/pong.dir/main.cpp.o: CMakeFiles/pong.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/JR_raylib_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pong.dir/main.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong.dir/main.cpp.o -MF CMakeFiles/pong.dir/main.cpp.o.d -o CMakeFiles/pong.dir/main.cpp.o -c /workspaces/JR_raylib_pong/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deck/source/repos/C++/rl_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pong.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong.dir/main.cpp.o -MF CMakeFiles/pong.dir/main.cpp.o.d -o CMakeFiles/pong.dir/main.cpp.o -c /home/deck/source/repos/C++/rl_pong/main.cpp
 
 CMakeFiles/pong.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pong.dir/main.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/JR_raylib_pong/main.cpp > CMakeFiles/pong.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deck/source/repos/C++/rl_pong/main.cpp > CMakeFiles/pong.dir/main.cpp.i
 
 CMakeFiles/pong.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pong.dir/main.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/JR_raylib_pong/main.cpp -o CMakeFiles/pong.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deck/source/repos/C++/rl_pong/main.cpp -o CMakeFiles/pong.dir/main.cpp.s
 
 CMakeFiles/pong.dir/BaseECS/Stage.cpp.o: CMakeFiles/pong.dir/flags.make
-CMakeFiles/pong.dir/BaseECS/Stage.cpp.o: /workspaces/JR_raylib_pong/BaseECS/Stage.cpp
+CMakeFiles/pong.dir/BaseECS/Stage.cpp.o: /home/deck/source/repos/C++/rl_pong/BaseECS/Stage.cpp
 CMakeFiles/pong.dir/BaseECS/Stage.cpp.o: CMakeFiles/pong.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/JR_raylib_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pong.dir/BaseECS/Stage.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong.dir/BaseECS/Stage.cpp.o -MF CMakeFiles/pong.dir/BaseECS/Stage.cpp.o.d -o CMakeFiles/pong.dir/BaseECS/Stage.cpp.o -c /workspaces/JR_raylib_pong/BaseECS/Stage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deck/source/repos/C++/rl_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pong.dir/BaseECS/Stage.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong.dir/BaseECS/Stage.cpp.o -MF CMakeFiles/pong.dir/BaseECS/Stage.cpp.o.d -o CMakeFiles/pong.dir/BaseECS/Stage.cpp.o -c /home/deck/source/repos/C++/rl_pong/BaseECS/Stage.cpp
 
 CMakeFiles/pong.dir/BaseECS/Stage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pong.dir/BaseECS/Stage.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/JR_raylib_pong/BaseECS/Stage.cpp > CMakeFiles/pong.dir/BaseECS/Stage.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deck/source/repos/C++/rl_pong/BaseECS/Stage.cpp > CMakeFiles/pong.dir/BaseECS/Stage.cpp.i
 
 CMakeFiles/pong.dir/BaseECS/Stage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pong.dir/BaseECS/Stage.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/JR_raylib_pong/BaseECS/Stage.cpp -o CMakeFiles/pong.dir/BaseECS/Stage.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deck/source/repos/C++/rl_pong/BaseECS/Stage.cpp -o CMakeFiles/pong.dir/BaseECS/Stage.cpp.s
 
 CMakeFiles/pong.dir/BaseECS/Scene.cpp.o: CMakeFiles/pong.dir/flags.make
-CMakeFiles/pong.dir/BaseECS/Scene.cpp.o: /workspaces/JR_raylib_pong/BaseECS/Scene.cpp
+CMakeFiles/pong.dir/BaseECS/Scene.cpp.o: /home/deck/source/repos/C++/rl_pong/BaseECS/Scene.cpp
 CMakeFiles/pong.dir/BaseECS/Scene.cpp.o: CMakeFiles/pong.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/JR_raylib_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pong.dir/BaseECS/Scene.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong.dir/BaseECS/Scene.cpp.o -MF CMakeFiles/pong.dir/BaseECS/Scene.cpp.o.d -o CMakeFiles/pong.dir/BaseECS/Scene.cpp.o -c /workspaces/JR_raylib_pong/BaseECS/Scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deck/source/repos/C++/rl_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pong.dir/BaseECS/Scene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong.dir/BaseECS/Scene.cpp.o -MF CMakeFiles/pong.dir/BaseECS/Scene.cpp.o.d -o CMakeFiles/pong.dir/BaseECS/Scene.cpp.o -c /home/deck/source/repos/C++/rl_pong/BaseECS/Scene.cpp
 
 CMakeFiles/pong.dir/BaseECS/Scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pong.dir/BaseECS/Scene.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/JR_raylib_pong/BaseECS/Scene.cpp > CMakeFiles/pong.dir/BaseECS/Scene.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deck/source/repos/C++/rl_pong/BaseECS/Scene.cpp > CMakeFiles/pong.dir/BaseECS/Scene.cpp.i
 
 CMakeFiles/pong.dir/BaseECS/Scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pong.dir/BaseECS/Scene.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/JR_raylib_pong/BaseECS/Scene.cpp -o CMakeFiles/pong.dir/BaseECS/Scene.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deck/source/repos/C++/rl_pong/BaseECS/Scene.cpp -o CMakeFiles/pong.dir/BaseECS/Scene.cpp.s
 
 CMakeFiles/pong.dir/BaseECS/Entity.cpp.o: CMakeFiles/pong.dir/flags.make
-CMakeFiles/pong.dir/BaseECS/Entity.cpp.o: /workspaces/JR_raylib_pong/BaseECS/Entity.cpp
+CMakeFiles/pong.dir/BaseECS/Entity.cpp.o: /home/deck/source/repos/C++/rl_pong/BaseECS/Entity.cpp
 CMakeFiles/pong.dir/BaseECS/Entity.cpp.o: CMakeFiles/pong.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/JR_raylib_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pong.dir/BaseECS/Entity.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong.dir/BaseECS/Entity.cpp.o -MF CMakeFiles/pong.dir/BaseECS/Entity.cpp.o.d -o CMakeFiles/pong.dir/BaseECS/Entity.cpp.o -c /workspaces/JR_raylib_pong/BaseECS/Entity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deck/source/repos/C++/rl_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pong.dir/BaseECS/Entity.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong.dir/BaseECS/Entity.cpp.o -MF CMakeFiles/pong.dir/BaseECS/Entity.cpp.o.d -o CMakeFiles/pong.dir/BaseECS/Entity.cpp.o -c /home/deck/source/repos/C++/rl_pong/BaseECS/Entity.cpp
 
 CMakeFiles/pong.dir/BaseECS/Entity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pong.dir/BaseECS/Entity.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/JR_raylib_pong/BaseECS/Entity.cpp > CMakeFiles/pong.dir/BaseECS/Entity.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deck/source/repos/C++/rl_pong/BaseECS/Entity.cpp > CMakeFiles/pong.dir/BaseECS/Entity.cpp.i
 
 CMakeFiles/pong.dir/BaseECS/Entity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pong.dir/BaseECS/Entity.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/JR_raylib_pong/BaseECS/Entity.cpp -o CMakeFiles/pong.dir/BaseECS/Entity.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deck/source/repos/C++/rl_pong/BaseECS/Entity.cpp -o CMakeFiles/pong.dir/BaseECS/Entity.cpp.s
 
 CMakeFiles/pong.dir/BaseECS/Component.cpp.o: CMakeFiles/pong.dir/flags.make
-CMakeFiles/pong.dir/BaseECS/Component.cpp.o: /workspaces/JR_raylib_pong/BaseECS/Component.cpp
+CMakeFiles/pong.dir/BaseECS/Component.cpp.o: /home/deck/source/repos/C++/rl_pong/BaseECS/Component.cpp
 CMakeFiles/pong.dir/BaseECS/Component.cpp.o: CMakeFiles/pong.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/JR_raylib_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pong.dir/BaseECS/Component.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong.dir/BaseECS/Component.cpp.o -MF CMakeFiles/pong.dir/BaseECS/Component.cpp.o.d -o CMakeFiles/pong.dir/BaseECS/Component.cpp.o -c /workspaces/JR_raylib_pong/BaseECS/Component.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deck/source/repos/C++/rl_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pong.dir/BaseECS/Component.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong.dir/BaseECS/Component.cpp.o -MF CMakeFiles/pong.dir/BaseECS/Component.cpp.o.d -o CMakeFiles/pong.dir/BaseECS/Component.cpp.o -c /home/deck/source/repos/C++/rl_pong/BaseECS/Component.cpp
 
 CMakeFiles/pong.dir/BaseECS/Component.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pong.dir/BaseECS/Component.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/JR_raylib_pong/BaseECS/Component.cpp > CMakeFiles/pong.dir/BaseECS/Component.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deck/source/repos/C++/rl_pong/BaseECS/Component.cpp > CMakeFiles/pong.dir/BaseECS/Component.cpp.i
 
 CMakeFiles/pong.dir/BaseECS/Component.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pong.dir/BaseECS/Component.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/JR_raylib_pong/BaseECS/Component.cpp -o CMakeFiles/pong.dir/BaseECS/Component.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deck/source/repos/C++/rl_pong/BaseECS/Component.cpp -o CMakeFiles/pong.dir/BaseECS/Component.cpp.s
 
 CMakeFiles/pong.dir/Components/TransformComponent.cpp.o: CMakeFiles/pong.dir/flags.make
-CMakeFiles/pong.dir/Components/TransformComponent.cpp.o: /workspaces/JR_raylib_pong/Components/TransformComponent.cpp
+CMakeFiles/pong.dir/Components/TransformComponent.cpp.o: /home/deck/source/repos/C++/rl_pong/Components/TransformComponent.cpp
 CMakeFiles/pong.dir/Components/TransformComponent.cpp.o: CMakeFiles/pong.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/JR_raylib_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pong.dir/Components/TransformComponent.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong.dir/Components/TransformComponent.cpp.o -MF CMakeFiles/pong.dir/Components/TransformComponent.cpp.o.d -o CMakeFiles/pong.dir/Components/TransformComponent.cpp.o -c /workspaces/JR_raylib_pong/Components/TransformComponent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deck/source/repos/C++/rl_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pong.dir/Components/TransformComponent.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong.dir/Components/TransformComponent.cpp.o -MF CMakeFiles/pong.dir/Components/TransformComponent.cpp.o.d -o CMakeFiles/pong.dir/Components/TransformComponent.cpp.o -c /home/deck/source/repos/C++/rl_pong/Components/TransformComponent.cpp
 
 CMakeFiles/pong.dir/Components/TransformComponent.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pong.dir/Components/TransformComponent.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/JR_raylib_pong/Components/TransformComponent.cpp > CMakeFiles/pong.dir/Components/TransformComponent.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deck/source/repos/C++/rl_pong/Components/TransformComponent.cpp > CMakeFiles/pong.dir/Components/TransformComponent.cpp.i
 
 CMakeFiles/pong.dir/Components/TransformComponent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pong.dir/Components/TransformComponent.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/JR_raylib_pong/Components/TransformComponent.cpp -o CMakeFiles/pong.dir/Components/TransformComponent.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deck/source/repos/C++/rl_pong/Components/TransformComponent.cpp -o CMakeFiles/pong.dir/Components/TransformComponent.cpp.s
 
 CMakeFiles/pong.dir/Scenes/PongGame.cpp.o: CMakeFiles/pong.dir/flags.make
-CMakeFiles/pong.dir/Scenes/PongGame.cpp.o: /workspaces/JR_raylib_pong/Scenes/PongGame.cpp
+CMakeFiles/pong.dir/Scenes/PongGame.cpp.o: /home/deck/source/repos/C++/rl_pong/Scenes/PongGame.cpp
 CMakeFiles/pong.dir/Scenes/PongGame.cpp.o: CMakeFiles/pong.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/JR_raylib_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pong.dir/Scenes/PongGame.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong.dir/Scenes/PongGame.cpp.o -MF CMakeFiles/pong.dir/Scenes/PongGame.cpp.o.d -o CMakeFiles/pong.dir/Scenes/PongGame.cpp.o -c /workspaces/JR_raylib_pong/Scenes/PongGame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deck/source/repos/C++/rl_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pong.dir/Scenes/PongGame.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong.dir/Scenes/PongGame.cpp.o -MF CMakeFiles/pong.dir/Scenes/PongGame.cpp.o.d -o CMakeFiles/pong.dir/Scenes/PongGame.cpp.o -c /home/deck/source/repos/C++/rl_pong/Scenes/PongGame.cpp
 
 CMakeFiles/pong.dir/Scenes/PongGame.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pong.dir/Scenes/PongGame.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/JR_raylib_pong/Scenes/PongGame.cpp > CMakeFiles/pong.dir/Scenes/PongGame.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deck/source/repos/C++/rl_pong/Scenes/PongGame.cpp > CMakeFiles/pong.dir/Scenes/PongGame.cpp.i
 
 CMakeFiles/pong.dir/Scenes/PongGame.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pong.dir/Scenes/PongGame.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/JR_raylib_pong/Scenes/PongGame.cpp -o CMakeFiles/pong.dir/Scenes/PongGame.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deck/source/repos/C++/rl_pong/Scenes/PongGame.cpp -o CMakeFiles/pong.dir/Scenes/PongGame.cpp.s
 
 CMakeFiles/pong.dir/Entities/Paddle.cpp.o: CMakeFiles/pong.dir/flags.make
-CMakeFiles/pong.dir/Entities/Paddle.cpp.o: /workspaces/JR_raylib_pong/Entities/Paddle.cpp
+CMakeFiles/pong.dir/Entities/Paddle.cpp.o: /home/deck/source/repos/C++/rl_pong/Entities/Paddle.cpp
 CMakeFiles/pong.dir/Entities/Paddle.cpp.o: CMakeFiles/pong.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/JR_raylib_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pong.dir/Entities/Paddle.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong.dir/Entities/Paddle.cpp.o -MF CMakeFiles/pong.dir/Entities/Paddle.cpp.o.d -o CMakeFiles/pong.dir/Entities/Paddle.cpp.o -c /workspaces/JR_raylib_pong/Entities/Paddle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deck/source/repos/C++/rl_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pong.dir/Entities/Paddle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong.dir/Entities/Paddle.cpp.o -MF CMakeFiles/pong.dir/Entities/Paddle.cpp.o.d -o CMakeFiles/pong.dir/Entities/Paddle.cpp.o -c /home/deck/source/repos/C++/rl_pong/Entities/Paddle.cpp
 
 CMakeFiles/pong.dir/Entities/Paddle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pong.dir/Entities/Paddle.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/JR_raylib_pong/Entities/Paddle.cpp > CMakeFiles/pong.dir/Entities/Paddle.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deck/source/repos/C++/rl_pong/Entities/Paddle.cpp > CMakeFiles/pong.dir/Entities/Paddle.cpp.i
 
 CMakeFiles/pong.dir/Entities/Paddle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pong.dir/Entities/Paddle.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/JR_raylib_pong/Entities/Paddle.cpp -o CMakeFiles/pong.dir/Entities/Paddle.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deck/source/repos/C++/rl_pong/Entities/Paddle.cpp -o CMakeFiles/pong.dir/Entities/Paddle.cpp.s
 
 CMakeFiles/pong.dir/Entities/Ball.cpp.o: CMakeFiles/pong.dir/flags.make
-CMakeFiles/pong.dir/Entities/Ball.cpp.o: /workspaces/JR_raylib_pong/Entities/Ball.cpp
+CMakeFiles/pong.dir/Entities/Ball.cpp.o: /home/deck/source/repos/C++/rl_pong/Entities/Ball.cpp
 CMakeFiles/pong.dir/Entities/Ball.cpp.o: CMakeFiles/pong.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/JR_raylib_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pong.dir/Entities/Ball.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong.dir/Entities/Ball.cpp.o -MF CMakeFiles/pong.dir/Entities/Ball.cpp.o.d -o CMakeFiles/pong.dir/Entities/Ball.cpp.o -c /workspaces/JR_raylib_pong/Entities/Ball.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deck/source/repos/C++/rl_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pong.dir/Entities/Ball.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pong.dir/Entities/Ball.cpp.o -MF CMakeFiles/pong.dir/Entities/Ball.cpp.o.d -o CMakeFiles/pong.dir/Entities/Ball.cpp.o -c /home/deck/source/repos/C++/rl_pong/Entities/Ball.cpp
 
 CMakeFiles/pong.dir/Entities/Ball.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pong.dir/Entities/Ball.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/JR_raylib_pong/Entities/Ball.cpp > CMakeFiles/pong.dir/Entities/Ball.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deck/source/repos/C++/rl_pong/Entities/Ball.cpp > CMakeFiles/pong.dir/Entities/Ball.cpp.i
 
 CMakeFiles/pong.dir/Entities/Ball.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pong.dir/Entities/Ball.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/JR_raylib_pong/Entities/Ball.cpp -o CMakeFiles/pong.dir/Entities/Ball.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deck/source/repos/C++/rl_pong/Entities/Ball.cpp -o CMakeFiles/pong.dir/Entities/Ball.cpp.s
 
 # Object files for target pong
 pong_OBJECTS = \
@@ -224,10 +224,10 @@ pong: _deps/raylib-build/raylib/libraylib.a
 pong: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 pong: /usr/lib/x86_64-linux-gnu/libGLX.so
 pong: _deps/raylib-build/raylib/external/glfw/src/libglfw3.a
-pong: /usr/lib/x86_64-linux-gnu/librt.so
+pong: /usr/lib/x86_64-linux-gnu/librt.a
 pong: /usr/lib/x86_64-linux-gnu/libm.so
 pong: CMakeFiles/pong.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspaces/JR_raylib_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable pong"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/deck/source/repos/C++/rl_pong/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable pong"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pong.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -239,6 +239,6 @@ CMakeFiles/pong.dir/clean:
 .PHONY : CMakeFiles/pong.dir/clean
 
 CMakeFiles/pong.dir/depend:
-	cd /workspaces/JR_raylib_pong/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspaces/JR_raylib_pong /workspaces/JR_raylib_pong /workspaces/JR_raylib_pong/build /workspaces/JR_raylib_pong/build /workspaces/JR_raylib_pong/build/CMakeFiles/pong.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/deck/source/repos/C++/rl_pong/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/deck/source/repos/C++/rl_pong /home/deck/source/repos/C++/rl_pong /home/deck/source/repos/C++/rl_pong/build /home/deck/source/repos/C++/rl_pong/build /home/deck/source/repos/C++/rl_pong/build/CMakeFiles/pong.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pong.dir/depend
 

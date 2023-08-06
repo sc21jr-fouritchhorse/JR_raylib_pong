@@ -11,16 +11,12 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries",
-			"set_property",
-			"find_package"
+			"target_link_libraries"
 		],
 		"files" : 
 		[
 			"CMakeLists.txt",
 			"build/_deps/raylib-src/src/CMakeLists.txt",
-			"/home/codespace/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/FindThreads.cmake",
-			"build/_deps/raylib-src/src/external/glfw/CMakeLists.txt",
 			"build/_deps/raylib-src/src/external/glfw/src/CMakeLists.txt"
 		],
 		"nodes" : 
@@ -50,32 +46,13 @@
 				"parent" : 3
 			},
 			{
-				"file" : 3
-			},
-			{
-				"command" : 3,
-				"file" : 3,
-				"line" : 64,
-				"parent" : 5
-			},
-			{
-				"file" : 2,
-				"parent" : 6
-			},
-			{
-				"command" : 2,
-				"file" : 2,
-				"line" : 238,
-				"parent" : 7
-			},
-			{
-				"file" : 4
+				"file" : 2
 			},
 			{
 				"command" : 1,
-				"file" : 4,
+				"file" : 2,
 				"line" : 231,
-				"parent" : 9
+				"parent" : 5
 			}
 		]
 	},
@@ -85,7 +62,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++2a"
+					"fragment" : "-std=gnu++20"
 				}
 			],
 			"defines" : 
@@ -103,11 +80,11 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/workspaces/JR_raylib_pong/build/_deps/raylib-src/src"
+					"path" : "/home/deck/source/repos/C++/rl_pong/build/_deps/raylib-src/src"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/workspaces/JR_raylib_pong/build/_deps/raylib-src/src/external/glfw/include"
+					"path" : "/home/deck/source/repos/C++/rl_pong/build/_deps/raylib-src/src/external/glfw/include"
 				}
 			],
 			"language" : "CXX",
@@ -150,10 +127,6 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
-			{
 				"fragment" : "",
 				"role" : "flags"
 			},
@@ -193,13 +166,8 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 8,
-				"fragment" : "-lpthread",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 10,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/librt.so",
+				"backtrace" : 6,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/librt.a",
 				"role" : "libraries"
 			},
 			{
