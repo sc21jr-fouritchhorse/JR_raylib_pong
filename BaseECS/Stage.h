@@ -6,9 +6,11 @@
 #ifndef RAYLIB623_STAGE_H
 #define RAYLIB623_STAGE_H
 
+#include <memory>
 #include <cstring>
 #include <raylib.h>
-#include "Scene.h"
+
+class Scene;
 
 class Stage {
 private:
@@ -18,7 +20,7 @@ private:
     Camera3D defaultCam3;
     Camera2D defaultCam2;
 protected:
-    Scene* currScene;
+    std::shared_ptr<Scene> currScene;
 public:
     Stage(const char *t, unsigned int w, unsigned int h, Camera3D cam3, Camera2D cam2);
    virtual ~Stage();

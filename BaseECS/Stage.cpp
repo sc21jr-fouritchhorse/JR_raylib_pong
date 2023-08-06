@@ -3,6 +3,7 @@
 //
 
 #include "Stage.h"
+#include "Scene.h"
 
 Stage::Stage(const char *t, unsigned int w, unsigned int h, Camera3D cam3, Camera2D cam2) :
 winTitle(t), winWidth(w), winHeight(h), defaultCam2(cam2), defaultCam3(cam3)
@@ -31,28 +32,23 @@ void Stage::Run() {
     if(currScene == nullptr)
         return;
     SetTargetFPS(60);
+    auto scene = std::dynamic_pointer_cast<Scene>(currScene);
     while (!WindowShouldClose())
     {
-        currScene->Update(GetFrameTime());
-        currScene->GetInput();
+        scene->Update(GetFrameTime());
+        scene->GetInput();
 
         BeginDrawing();
-        if(currScene->get3D())
-            BeginMode3D(currScene->getCam3D());
-        else
-            BeginMode2D(currScene->getCam2D());
-
+        BeginMode2D(scene->getCam2D());
         ClearBackground(RAYWHITE);
-        currScene->Draw();
+        scene->Draw();
 
 
-        if (currScene->get3D())
-            EndMode3D();
-        else
-            EndMode2D();
+        EndMode2D();
         EndDrawing();
     }
 }
+
 
 void Stage::SetRes(unsigned int newW, unsigned int newH) {
     this->winWidth = newW;
@@ -61,10 +57,7 @@ void Stage::SetRes(unsigned int newW, unsigned int newH) {
 }
 
 void Stage::SetCurrentScene(Scene *newScene) {
-    this->currScene = newScene;
-    newScene->setMyStage(this);
-    if(currScene->get3D())
-        currScene->setCam3D(defaultCam3);
-    else
-        currScene->setCam2D(defaultCam2);
+    this->currScene = std::make_shared<Scene>(newScene);
+    auto scn = std::dynamic_pointer_cast<Scene>(currScene);
+    scn->setMyStage(this);
 }

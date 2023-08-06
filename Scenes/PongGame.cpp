@@ -9,7 +9,7 @@ PongGame::~PongGame() {
 }
 
 PongGame::PongGame() {
-    ball = AddEntity<Ball>();
+    //ball = AddEntity<Ball>();
     player1 = AddEntity<Paddle>();
     player2 = AddEntity<Paddle>();
 

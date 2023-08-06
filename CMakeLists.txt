@@ -1,9 +1,11 @@
 cmake_minimum_required(VERSION 3.24)
-project(raylib623)
+project(pong)
 
 set(CMAKE_CXX_STANDARD 20)
 
-# Dependencies
+# Dependencies]
+
+
 set(RAYLIB_VERSION 4.5.0)
 find_package(raylib ${RAYLIB_VERSION} QUIET) # QUIET or REQUIRED
 if (NOT raylib_FOUND) # If there's none, fetch and build raylib
@@ -13,6 +15,7 @@ if (NOT raylib_FOUND) # If there's none, fetch and build raylib
             DOWNLOAD_EXTRACT_TIMESTAMP OFF
             URL https://github.com/raysan5/raylib/archive/refs/tags/${RAYLIB_VERSION}.tar.gz
     )
+    set(raylib NO_X11 TRUE)
     FetchContent_GetProperties(raylib)
     if (NOT raylib_POPULATED) # Have we downloaded raylib yet?
         set(FETCHCONTENT_QUIET NO)
@@ -23,15 +26,16 @@ if (NOT raylib_FOUND) # If there's none, fetch and build raylib
 endif()
 
 
-add_executable(raylib623 main.cpp
+
+add_executable(pong 
+        main.cpp
         BaseECS/Stage.cpp BaseECS/Stage.h
         BaseECS/Scene.cpp BaseECS/Scene.h
         BaseECS/Entity.cpp BaseECS/Entity.h
         BaseECS/Component.cpp BaseECS/Component.h
         Components/TransformComponent.cpp
         Components/TransformComponent.h
-        Scenes/PlayerInput.cpp
-        Scenes/PlayerInput.h
-        Entities/Arrow.cpp Entities/Arrow.h
-        Scenes/PongGame.cpp Scenes/PongGame.h Entities/Paddle.cpp Entities/Paddle.h Entities/Ball.cpp Entities/Ball.h)
-target_link_libraries(raylib623 raylib)
+        Scenes/PongGame.cpp Scenes/PongGame.h 
+        Entities/Paddle.cpp Entities/Paddle.h 
+        Entities/Ball.cpp Entities/Ball.h)
+target_link_libraries(pong raylib)

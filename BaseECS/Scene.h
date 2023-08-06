@@ -5,8 +5,8 @@
 #ifndef RAYLIB623_SCENE_H
 #define RAYLIB623_SCENE_H
 
-#include "Entity.h"
 #include "Stage.h"
+#include "Entity.h"
 #include <raylib.h>
 #include <vector>
 #include <type_traits>
@@ -14,7 +14,7 @@
 
 class Scene {
 public:
-    Scene(bool amI3D);
+    Scene(bool amI3D=false);
 
     virtual ~Scene();
     virtual void GetInput();
@@ -36,6 +36,7 @@ public:
     }
 
 protected:
+    //Needs to be set as a Stage type
     Stage *myStage{};
     std::vector<Entity*> entities;
     Camera3D cam3D{};
